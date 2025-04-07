@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+/*Base Reset and Normalization*/
+@import url("normalize.css");
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  background-color: #def2F1;
+  color: #2b7a78;
+}
+
+img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+}
+
+/*Layout & Container*/
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px ;
+  
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/*Typography*/
+h1, h2, h3 {
+  color: #17252A;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*Header*/
+header {
+  background-color: #17252A;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-bottom: 2px solid #2b7a78;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header .logo {
+  max-width: 150px;
+  position: absolute;
+  left: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  color: #def2F1;
+}
+
+header p {
+  margin-top: 0.5rem;
+  color: #2b7a78;
+}
+
+/* Article Sections*/
+.article-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #def2F1;
+}
+
+.article-section:last-child {
+  border-bottom: none;
+}
+
+.article-image {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #17252A;
+  text-align: center;
+  padding: 0.3rem 0 ;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #def2F1;
+}
+
+header, footer {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Content Box */
+.content-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.content-box h2 {
+  font-size: 2rem;
+  color: #17252A;
+  margin-bottom: 1rem;
+}
+
+.content-box p {
+  font-size: 1rem;
+  color: #2b7a78;
+}
